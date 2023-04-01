@@ -1,11 +1,10 @@
 <script>
-	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/april.png';
 </script>
 
 <svelte:head>
 	<title>Lesesalen</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Lesesalen webpage" />
 </svelte:head>
 
 <section>
