@@ -1,11 +1,10 @@
 <script>
 	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import welcome from '$lib/images/april.png';
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Lesesalen</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
@@ -13,19 +12,14 @@
 	<h1>
 		<span class="welcome">
 			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
+				<img src={welcome} alt="Welcome, gentlemen" />
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit app
+		You fell for the<br />classic ruse
 	</h1>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
+	<h2>Happy Easter!</h2>
 </section>
 
 <style>
@@ -44,7 +38,9 @@
 	.welcome {
 		display: block;
 		position: relative;
-		width: 100%;
+		width: 25%;
+		margin-left: auto;
+		margin-right: auto;
 		height: 0;
 		padding: 0 0 calc(100% * 495 / 2048) 0;
 	}
