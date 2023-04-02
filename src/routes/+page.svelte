@@ -18,7 +18,7 @@
 		You fell for the<br />classic ruse
 	</h1>
 
-	<h2>John arth</h2>
+	<h2>John arth ten</h2>
 </section>
 
 <style>
