@@ -92,11 +92,23 @@
 		vertical-align: middle;
 	}
 
-	.button-24:hover,
-	.button-24:active {
-		background-color: initial;
-		background-position: 0 0;
-		color: #ff4742;
+	@media (min-width: 768px) {
+		.button-24 {
+			font-size: 18px;
+			line-height: 18px;
+			min-height: 48px;
+			padding: 14px 16px;
+		}
+		.quiz h3 {
+			margin-bottom: 3rem;
+			font-size: 2rem;
+		}
+		.button-24:hover,
+		.button-24:active {
+			background-color: initial;
+			background-position: 0 0;
+			color: #ff4742;
+		}
 	}
 
 	.button-24:active {
