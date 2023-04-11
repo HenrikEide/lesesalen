@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
 		<link href="./_app/immutable/assets/_layout.2a755c0f.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/_page.02c52dc5.css" rel="stylesheet">
 		<link rel="modulepreload" href="./_app/immutable/entry/start.f47e8ad3.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.24eba3a7.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.7b14c0cf.js">
@@ -14,7 +13,7 @@
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.e922dcb6.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.ts.984db11e.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_page.svelte.92cbc18d.js"><title>Lesesalen</title><!-- HEAD_svelte-5ywp0k_START --><meta name="description" content="Lesesalen webpage"><!-- HEAD_svelte-5ywp0k_END -->
+		<link rel="modulepreload" href="./_app/immutable/entry/quiz-page.svelte.fbdf7336.js"><title>Lesesalen</title><!-- HEAD_svelte-5ywp0k_START --><meta name="description" content="Lesesalen webpage"><!-- HEAD_svelte-5ywp0k_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -22,13 +21,16 @@
 
 
 
-<div class="app svelte-1jk145c"><main class="svelte-1jk145c"><section class="svelte-1jk145c"><h1 class="svelte-1k0avgf"><span class="welcome svelte-1k0avgf"><picture><img src="/_app/immutable/assets/april.fb7a2b50.png" alt="Welcome, gentlemen" class="svelte-1k0avgf"></picture></span>
-
-	You fell for the<br>classic ruse
-</h1>
-
-<h2>Not 1. April? Refer to <a target="_blank" href="https://newskit.social/articles/what-to-do-when-its-not-first-of-april">this</a>
-</h2></section></main>
+<div class="app svelte-1jk145c"><main class="svelte-1jk145c"><section class="svelte-1jk145c"><div class="quiz"><h3>What is the capital of France?</h3>
+		<ul><li><label><input type="radio" name="question_0" value="Paris">
+						Paris</label>
+				</li><li><label><input type="radio" name="question_0" value="Berlin">
+						Berlin</label>
+				</li><li><label><input type="radio" name="question_0" value="London">
+						London</label>
+				</li><li><label><input type="radio" name="question_0" value="Madrid">
+						Madrid</label>
+				</li></ul></div></section></main>
 </div>
 
 
@@ -48,7 +50,7 @@
 						import("./_app/immutable/entry/app.ac93f3cd.js")
 					]).then(([kit, app]) => {
 						kit.start(app, __sveltekit_l6um28.element, {
-							node_ids: [0, 2],
+							node_ids: [0, 3],
 							data,
 							form: null,
 							error: null
