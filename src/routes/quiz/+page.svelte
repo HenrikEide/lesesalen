@@ -21,7 +21,7 @@
 		if (answer === question.answer) {
 			correctAnswers++;
 		}
-		if (currentQuestion < questions.length - 1) {
+		if (currentQuestion < questions.length) {
 			currentQuestion++;
 		}
 	}
@@ -35,7 +35,7 @@
 	});
 </script>
 
-{#if currentQuestion <= questions.length}
+{#if currentQuestion < questions.length}
 	<div class="quiz">
 		<h3>{questions[currentQuestion].question}</h3>
 		<ul>
