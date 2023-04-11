@@ -2,39 +2,24 @@
 	import welcome from '$lib/images/april.png';
 </script>
 
-<svelte:head>
-	<title>Lesesalen</title>
-	<meta name="description" content="Lesesalen webpage" />
-</svelte:head>
+<h1>
+	<span class="welcome">
+		<picture>
+			<img src={welcome} alt="Welcome, gentlemen" />
+		</picture>
+	</span>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<img src={welcome} alt="Welcome, gentlemen" />
-			</picture>
-		</span>
+	You fell for the<br />classic ruse
+</h1>
 
-		You fell for the<br />classic ruse
-	</h1>
-
-	<h2>
-		Not 1. April? Refer to <a
-			target="_blank"
-			href="https://newskit.social/articles/what-to-do-when-its-not-first-of-april">this</a
-		>
-	</h2>
-</section>
+<h2>
+	Not 1. April? Refer to <a
+		target="_blank"
+		href="https://newskit.social/articles/what-to-do-when-its-not-first-of-april">this</a
+	>
+</h2>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
 	h1 {
 		width: 100%;
 	}

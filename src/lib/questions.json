@@ -1,0 +1,17 @@
+[
+	{
+		"question": "What is the capital of France?",
+		"alternatives": ["Paris", "Berlin", "London", "Madrid"],
+		"answer": "Paris"
+	},
+	{
+		"question": "What is the largest ocean in the world?",
+		"alternatives": ["Atlantic Ocean", "Arctic Ocean", "Indian Ocean", "Pacific Ocean"],
+		"answer": "Pacific Ocean"
+	},
+	{
+		"question": "What is the currency of Japan?",
+		"alternatives": ["Yuan", "Won", "Yen", "Dollar"],
+		"answer": "Yen"
+	}
+]

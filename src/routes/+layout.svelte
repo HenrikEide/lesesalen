@@ -2,9 +2,16 @@
 	import './styles.css';
 </script>
 
+<svelte:head>
+	<title>Lesesalen</title>
+	<meta name="description" content="Lesesalen webpage" />
+</svelte:head>
+
 <div class="app">
 	<main>
-		<slot />
+		<section>
+			<slot />
+		</section>
 	</main>
 </div>
 
@@ -24,5 +31,13 @@
 		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex: 0.6;
 	}
 </style>
