@@ -18,7 +18,12 @@
 		You fell for the<br />classic ruse
 	</h1>
 
-	<h2>John arth ten</h2>
+	<h2>
+		Not 1. April? Refer to <a
+			target="_blank"
+			href="https://newskit.social/articles/what-to-do-when-its-not-first-of-april">this</a
+		>
+	</h2>
 </section>
 
 <style>
