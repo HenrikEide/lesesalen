@@ -1,62 +1,105 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import quizData from '$lib/questions.json';
-
-	type Answer = string | null;
 
 	interface Question {
 		question: string;
 		alternatives: string[];
-		answer: Answer;
+		answer: string;
 	}
 
 	const questions: Question[] = quizData;
 
-	let currentQuestion = 0;
-	let correctAnswers = 0;
+	let currQ = 0;
+	let rightAns = 0;
 
 	function submitAnswer(event: Event, question: Question) {
 		event.preventDefault();
 		const answer = (event.target as HTMLInputElement).value;
 		if (answer === question.answer) {
-			correctAnswers++;
+			rightAns++;
 		}
-		if (currentQuestion < questions.length) {
-			currentQuestion++;
+		if (currQ < questions.length) {
+			currQ++;
 		}
 	}
-
-	onMount(() => {
-		questions.forEach((question) => {
-			if (!question.hasOwnProperty('answer')) {
-				question.answer = null;
-			}
-		});
-	});
 </script>
 
-{#if currentQuestion < questions.length}
-	<div class="quiz">
-		<h3>{questions[currentQuestion].question}</h3>
-		<ul>
-			{#each questions[currentQuestion].alternatives as alternative}
-				<li>
-					<label>
-						<input
-							type="radio"
-							name={`question_${currentQuestion}`}
-							value={alternative}
-							on:change={(event) => submitAnswer(event, questions[currentQuestion])}
-						/>
-						{alternative}
-					</label>
-				</li>
-			{/each}
-		</ul>
-	</div>
-{:else}
-	<div class="score">
-		<h2>Your Score</h2>
-		<p>{correctAnswers} / {questions.length}</p>
-	</div>
-{/if}
+<div class="quiz">
+	{#if currQ < questions.length}
+		<h3>{questions[currQ].question}</h3>
+		{#each questions[currQ].alternatives as alternative}
+			<label>
+				<input
+					class="button-24"
+					type="button"
+					name={`question_${currQ}`}
+					value={alternative}
+					on:click={(event) => submitAnswer(event, questions[currQ])}
+				/>
+			</label>
+		{/each}
+	{:else}
+		<div class="score">
+			<p>Your Score</p>
+			<p>{rightAns} / {questions.length}</p>
+		</div>
+	{/if}
+</div>
+
+<style>
+	.quiz {
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.quiz h3 {
+		margin-bottom: 2rem;
+	}
+
+	.quiz label {
+		margin-bottom: 1rem;
+	}
+
+	.score {
+		font-size: 2rem;
+	}
+
+	.button-24 {
+		background: #ff4742;
+		border: 1px solid #ff4742;
+		border-radius: 6px;
+		box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+		box-sizing: border-box;
+		color: #ffffff;
+		cursor: pointer;
+		display: inline-block;
+		font-family: nunito, roboto, proxima-nova, 'proxima nova', sans-serif;
+		font-size: 16px;
+		font-weight: 800;
+		line-height: 16px;
+		min-height: 40px;
+		outline: 0;
+		padding: 12px 14px;
+		text-align: center;
+		text-rendering: geometricprecision;
+		text-transform: none;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+		vertical-align: middle;
+	}
+
+	.button-24:hover,
+	.button-24:active {
+		background-color: initial;
+		background-position: 0 0;
+		color: #ff4742;
+	}
+
+	.button-24:active {
+		opacity: 0.5;
+	}
+</style>
