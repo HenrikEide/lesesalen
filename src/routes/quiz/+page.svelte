@@ -22,6 +22,11 @@
 			currQ++;
 		}
 	}
+
+	function restartQuiz() {
+		currQ = 0;
+		rightAns = 0;
+	}
 </script>
 
 <div class="quiz">
@@ -42,6 +47,7 @@
 		<div class="score">
 			<p>Your Score</p>
 			<p>{rightAns} / {questions.length}</p>
+			<button class="restartQuiz" on:click={restartQuiz}>Restart</button>
 		</div>
 	{/if}
 </div>
@@ -65,6 +71,17 @@
 
 	.score {
 		font-size: 2rem;
+	}
+
+	.restartQuiz {
+		margin-top: 2rem;
+		display: inline-block;
+		padding: 0.5rem 1rem;
+		font-size: 1rem;
+		border: 1px solid #30ff5d;
+		border-radius: 6px;
+		background-color: #30ff5d;
+		cursor: pointer;
 	}
 
 	.button-24 {
