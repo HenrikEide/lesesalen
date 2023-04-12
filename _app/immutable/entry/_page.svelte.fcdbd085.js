@@ -1,4 +1,4 @@
-import{S as P,i as S,s as C,k as i,q as m,a as H,l as n,m as u,h as l,r as v,c as U,K as Y,n as f,b as x,E as a,I as R}from"../chunks/index.24eba3a7.js";const B=""+new URL("../assets/april.fb7a2b50.png",import.meta.url).href;function G(N){let e,h,p,r,y,d,g,E,_,c,b,o,k;return{c(){e=i("h1"),h=i("span"),p=i("picture"),r=i("img"),d=m(`
+import{S as P,i as S,s as C,k as i,q as m,a as H,l as n,m as u,h as l,r as v,c as U,K as Y,n as f,b as x,E as a,I as R}from"../chunks/index.2a93f750.js";const B=""+new URL("../assets/april.fb7a2b50.png",import.meta.url).href;function G(N){let e,h,p,r,y,d,g,E,_,c,b,o,k;return{c(){e=i("h1"),h=i("span"),p=i("picture"),r=i("img"),d=m(`
 
 	You fell for the`),g=i("br"),E=m("classic ruse"),_=H(),c=i("h2"),b=m("Not 1. April? Refer to "),o=i("a"),k=m("this"),this.h()},l(t){e=n(t,"H1",{class:!0});var s=u(e);h=n(s,"SPAN",{class:!0});var A=u(h);p=n(A,"PICTURE",{});var q=u(p);r=n(q,"IMG",{src:!0,alt:!0,class:!0}),q.forEach(l),A.forEach(l),d=v(s,`
 
