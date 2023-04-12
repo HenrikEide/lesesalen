@@ -9,6 +9,10 @@
 
 <div class="app">
 	<main>
+		<nav>
+			<a href="/">Home</a>
+			<a href="/quiz">Quiz</a>
+		</nav>
 		<section>
 			<slot />
 		</section>
@@ -31,6 +35,17 @@
 		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 30%;
+	}
+
+	nav a {
+		padding: 0.5rem;
 	}
 
 	section {
