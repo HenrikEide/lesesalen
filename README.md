@@ -10,7 +10,7 @@ Also includes the beginning of a quiz app I wanted to make.
 
 Want to contribute or fork the project? Run:
 
-> `npm install`  
-> `npm run dev`
+> npm install  
+> npm run dev
 
 To install dependencies and start the development environment.
