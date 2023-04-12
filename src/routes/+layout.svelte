@@ -10,8 +10,8 @@
 <div class="app">
 	<main>
 		<nav>
-			<a href="/lesesalen">Home</a>
-			<a href="/lesesalen/quiz">Quiz</a>
+			<a href="https://eiden.no/lesesalen/">Home</a>
+			<a href="https://eiden.no/lesesalen/quiz">Quiz</a>
 		</nav>
 		<section>
 			<slot />
