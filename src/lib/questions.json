@@ -13,5 +13,50 @@
 		"question": "What is the currency of Japan?",
 		"alternatives": ["Yuan", "Won", "Yen", "Dollar"],
 		"answer": "Yen"
+	},
+	{
+		"question": "What is the currency of Japan?",
+		"alternatives": ["Yen"],
+		"answer": "Yen"
+	},
+	{
+		"question": "What is currency?",
+		"alternatives": [
+			"Yuan",
+			"Won",
+			"Yen",
+			"Many",
+			"More",
+			"Options",
+			"Than",
+			"Answers",
+			"a system of money in general use in a particular country"
+		],
+		"answer": "a system of money in general use in a particular country"
+	},
+	{
+		"question": "What is?",
+		"alternatives": ["Yuan", "Won", "Yen", "Dollar", "Love"],
+		"answer": "Love"
+	},
+	{
+		"question": "Baby don't hurt me",
+		"alternatives": ["Don't hurt me", "Hurt me", "Pacific Ocean", "Specific Ocean"],
+		"answer": "Don't hurt me"
+	},
+	{
+		"question": "",
+		"alternatives": ["No more", "More"],
+		"answer": "No more"
+	},
+	{
+		"question": "",
+		"alternatives": ["What"],
+		"answer": "What"
+	},
+	{
+		"question": "",
+		"alternatives": ["How"],
+		"answer": "How"
 	}
 ]
