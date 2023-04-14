@@ -76,7 +76,7 @@
 	.restartQuiz {
 		margin-top: 2rem;
 		display: inline-block;
-		padding: 0.5rem 1rem;
+		padding: 0.4rem 0.8rem;
 		font-size: 1rem;
 		border: 1px solid #30ff5d;
 		border-radius: 6px;
