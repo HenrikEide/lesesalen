@@ -1,3 +1,5 @@
+[![Deploy Site](https://github.com/HenrikEide/lesesalen/actions/workflows/build-deploy.yaml/badge.svg)]
+
 # Lesesalen
 
 Sveltekit page I made for april fool's day. Go to [lesesalen.no](https://lesesalen.no) to see it in action.
