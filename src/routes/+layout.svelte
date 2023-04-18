@@ -46,6 +46,7 @@
 
 	nav a {
 		padding: 0.5rem;
+		color: #2F4F4F;
 	}
 
 	section {
