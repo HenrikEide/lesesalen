@@ -1,4 +1,4 @@
-[![Deploy Site](https://github.com/HenrikEide/lesesalen/actions/workflows/build-deploy.yaml/badge.svg)]
+![Deploy Site](https://github.com/HenrikEide/lesesalen/actions/workflows/build-deploy.yaml/badge.svg)
 
 # Lesesalen
 
