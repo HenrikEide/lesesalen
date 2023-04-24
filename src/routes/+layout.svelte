@@ -10,8 +10,8 @@
 <div class="app">
 	<main>
 		<nav>
-			<a href="/">Home</a>
-			<a href="/quiz">Quiz</a>
+			<a href="./">Home</a>
+			<a href="./quiz">Quiz</a>
 		</nav>
 		<section>
 			<slot />
