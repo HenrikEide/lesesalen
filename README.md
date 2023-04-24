@@ -17,6 +17,7 @@ Want to contribute or fork the project? Clone/fork and run
 
 To install dependencies and start the development environment.
 
-### QnA
+### QA
 
-- Why?
+- Q: Why?
+- A:
