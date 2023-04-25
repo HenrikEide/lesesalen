@@ -10,7 +10,7 @@
 <div class="app">
 	<main>
 		<nav>
-			<a href="https://eiden.no/lesesalen/">Home</a>
+			<a href="https://eiden.no/lesesalen">Home</a>
 			<a href="https://eiden.no/lesesalen/quiz">Quiz</a>
 		</nav>
 		<section>
@@ -46,7 +46,7 @@
 
 	nav a {
 		padding: 0.5rem;
-		color: #2F4F4F;
+		color: #2f4f4f;
 	}
 
 	section {
