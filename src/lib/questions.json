@@ -40,9 +40,9 @@
 		"answer": "Love"
 	},
 	{
-		"question": "Baby don't hurt me",
-		"alternatives": ["Don't hurt me", "Hurt me", "Pacific Ocean", "Specific Ocean"],
-		"answer": "Don't hurt me"
+		"question": "Ocean?",
+		"alternatives": ["Ocean", "Don't hurt me", "Pacific Ocean", "Specific Ocean"],
+		"answer": "Ocean"
 	},
 	{
 		"question": "",
@@ -50,13 +50,13 @@
 		"answer": "No more"
 	},
 	{
-		"question": "",
+		"question": "Green eggs and ham",
 		"alternatives": ["What"],
 		"answer": "What"
 	},
 	{
 		"question": "",
-		"alternatives": ["How"],
-		"answer": "How"
+		"alternatives": ["Sam"],
+		"answer": "Sam"
 	}
 ]
