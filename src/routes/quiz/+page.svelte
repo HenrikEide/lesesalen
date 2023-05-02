@@ -8,19 +8,14 @@
 	}
 
 	const questions: Question[] = quizData;
-
 	let currQ = 0;
 	let rightAns = 0;
 
-	function submitAnswer(event: Event, question: Question) {
-		event.preventDefault();
-		const answer = (event.target as HTMLInputElement).value;
-		if (answer === question.answer) {
+	function submitAnswer(ans: String, question: Question) {
+		if (ans === question.answer) {
 			rightAns++;
 		}
-		if (currQ < questions.length) {
-			currQ++;
-		}
+		currQ++;
 	}
 
 	function restartQuiz() {
@@ -33,15 +28,13 @@
 	{#if currQ < questions.length}
 		<h3>{questions[currQ].question}</h3>
 		{#each questions[currQ].alternatives as alternative}
-			<label>
-				<input
-					class="button-24"
-					type="button"
-					name={`question_${currQ}`}
-					value={alternative}
-					on:click={(event) => submitAnswer(event, questions[currQ])}
-				/>
-			</label>
+			<input
+				class="button-24"
+				type="button"
+				name={`question_${currQ}`}
+				value={alternative}
+				on:click={() => submitAnswer(alternative, questions[currQ])}
+			/>
 		{/each}
 	{:else}
 		<div class="score">
@@ -64,15 +57,11 @@
 	.quiz h3 {
 		margin-bottom: 2rem;
 	}
-
-	.quiz label {
-		margin-bottom: 1rem;
-	}
-
+	
 	.score {
 		font-size: 2rem;
 	}
-
+	
 	.restartQuiz {
 		margin-top: 2rem;
 		display: inline-block;
@@ -83,12 +72,13 @@
 		background-color: #30ff5d;
 		cursor: pointer;
 	}
-
+	
 	.button-24 {
 		background: #ff4742;
 		border: 1px solid #ff4742;
 		border-radius: 6px;
 		box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+		margin-bottom: 1rem;
 		box-sizing: border-box;
 		color: #ffffff;
 		cursor: pointer;
