@@ -12,6 +12,7 @@
 		<nav>
 			<a href="https://eiden.no/lesesalen">Home</a>
 			<a href="https://eiden.no/lesesalen/quiz">Quiz</a>
+  <a href="https://github.com/henrikeide/lesesalen">Github</a>
 		</nav>
 		<section>
 			<slot />
