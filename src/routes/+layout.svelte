@@ -12,7 +12,7 @@
 		<nav>
 			<a href="https://eiden.no/lesesalen">Home</a>
 			<a href="https://eiden.no/lesesalen/quiz">Quiz</a>
-  <a href="https://github.com/henrikeide/lesesalen">Github</a>
+			<a href="https://github.com/henrikeide/lesesalen">Github</a>
 		</nav>
 		<section>
 			<slot />
@@ -40,9 +40,8 @@
 
 	nav {
 		display: flex;
-		justify-content: center;
+		justify-content: left;
 		align-items: center;
-		width: 30%;
 	}
 
 	nav a {

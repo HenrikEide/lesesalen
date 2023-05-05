@@ -3,11 +3,9 @@
 </script>
 
 <h1>
-	<span class="welcome">
-		<picture>
-			<img src={welcome} alt="Welcome, gentlemen" />
-		</picture>
-	</span>
+	<div class="welcome">
+		<img src={welcome} alt="Welcome, gentlemen" />
+	</div>
 
 	You fell for the<br />classic ruse
 </h1>
@@ -20,25 +18,17 @@
 </h2>
 
 <style>
-	h1 {
-		width: 100%;
-	}
-
 	.welcome {
-		display: block;
-		position: relative;
-		width: 25%;
-		margin-left: auto;
-		margin-right: auto;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+		display: flex;
+		align-items: center;
+		margin-right: 15%;
+		margin-left: 10%;
 	}
 
 	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+		max-width: 100%;
+		max-height: 100%;
+		width: auto;
+		height: auto;
 	}
 </style>
