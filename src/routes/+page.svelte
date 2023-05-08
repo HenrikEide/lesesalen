@@ -11,7 +11,7 @@
 </h1>
 
 <h2>
-	Not 1. April? Refer to <a
+	Not 1st April? Refer to <a
 		target="_blank"
 		href="https://newskit.social/articles/what-to-do-when-its-not-first-of-april">this</a
 	>
