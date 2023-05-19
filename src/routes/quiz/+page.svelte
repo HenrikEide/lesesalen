@@ -40,7 +40,7 @@
 		<div class="score">
 			<p>Your Score</p>
 			<p>{rightAns} / {questions.length}</p>
-			<button class="restartQuiz" on:click={restartQuiz}>Restart</button>
+			<button class="restartQuiz" on:click={restartQuiz}>Retry</button>
 		</div>
 	{/if}
 </div>
@@ -57,11 +57,11 @@
 	.quiz h3 {
 		margin-bottom: 2rem;
 	}
-	
+
 	.score {
 		font-size: 2rem;
 	}
-	
+
 	.restartQuiz {
 		margin-top: 2rem;
 		display: inline-block;
@@ -72,7 +72,7 @@
 		background-color: #30ff5d;
 		cursor: pointer;
 	}
-	
+
 	.button-24 {
 		background: #ff4742;
 		border: 1px solid #ff4742;
