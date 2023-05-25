@@ -11,7 +11,7 @@
 	<main>
 		<nav>
 			<a href="/">Home</a>
-			<a href="https://eiden.no/lesesalen/">Aprilsnarr</a>
+			<a href="https://eiden.no/lesesalen/">Lesesalen</a>
 			<a href="https://eiden.no/lesesalen/quiz">Quiz</a>
 		</nav>
 		<section>

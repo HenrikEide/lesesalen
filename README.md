@@ -10,7 +10,7 @@ Also includes the beginning of a quiz app I wanted to make.
 
 ### Contribute
 
-Want to contribute or fork the project? Clone/fork and run
+Want to extend or fork the project? Clone/fork and run
 
 > npm install  
 > npm run dev
